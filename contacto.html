@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!--Link a Google Fonts-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald&display=swap" rel="stylesheet">
+     <!--Link a css-->
+     <link rel="stylesheet" href="estilo.css">
+   
+    <title>Contacto</title>
+</head>
+<body class="container-contacto">
+
+     <!--Header-->
+     <header class="header">
+        <a href="index.html">
+            <h1 class="logo">Luchiano´s</h1>
+        </a>
+        <nav>
+            <ul class="navbar-items">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./catalogo.html">Catalogo</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <fieldset>
+            <legend>
+                Formulario de Contacto
+            </legend>
+
+                <form action="">
+                    <div>
+                        <label for="Nombre" >Ingresa tu Nombre</label>
+                        <input type="text" name="Nombre" placeholder="German" required>
+                    </div>
+                    
+                    <div>
+                        <label for="Apellido">Ingresa tu Apellido</label>
+                        <input type="text" name="Apellido" placeholder="Hernandez" required>
+                    </div>
+
+                    <div>
+                        <label for="Mail">Ingrese una Direccion de Correo Electronico</label>
+                        <input type="Email" placeholder="Martinhernandez@hotmail.com" required>
+                    </div>
+
+                    <div>
+                        <label for="Genero">Seleccione su Genero</label>
+                        <input type="radio" name="Genero" required>Masculino
+                        <input type="radio" name="Genero" required>Femenino
+                        <input type="radio" name="Genero" required>No Binario
+                    </div>
+
+                    <div>
+                        <label for="Modelo">Elija un modelo de Auto</label>
+                        <select name="Modelo" id="">
+                            <option value="BM4">BMW M4</option>
+                            <option value="BM3">BMW M3</option>
+                            <option value="MZCA">MERCEDEZ CLASE A</option>
+                            <option value="MZA2">MERCEDEZ A250</option>
+                            <option value="PCH91">PORSCHE 911</option>
+                            <option value="PCHCY">PORSCHE CAYENNE</option>
+                            <option value="OTRO">OTRO</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="Consulta">Ingrese un comentario o problema</label>
+                        <textarea name="Consulta" id="" cols="30" rows="10" placeholder="Tengo un BMW M4 y se me rompio la direccion hidraulica"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                  
+                </form>
+        </fieldset>
+       
+
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+            
+            
+        <ul>
+            <li><h2>Todos los derechos reservados</h2></li>
+            <li><a href="https://www.facebook.com/Coderhouse">
+                <img src="./img/facee.png" alt="facebook" width="50px">
+            </a></li>
+            <li> <a href="https://www.instagram.com/coderhouse/?hl=es-la">
+                <img src="./img/iggggggggggggggggg.png" alt="instagram" width="50px">
+            </a></li>
+        </ul>
+
+    </footer>
+
+</body>
+</html>
