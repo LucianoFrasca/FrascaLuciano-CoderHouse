@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .container-home{
     display: grid;
     grid-template-areas: 
@@ -15,37 +16,47 @@
 /*-----HEADER-----*/
 .header {
     grid-area: header;
-    background-image: url("./img/Atmlc\ fondo.jpg");
+    background-image: url("./img/Fondo\ Header.jpg");
     opacity:    0.8;
     width: 100%;
     font-family: 'Oswald', sans-serif;
     display: flex;
     justify-content: space-around;
     height: 4.5rem;
+    border-bottom: 1px outset black;
 }
 
 .logo{
     font-size: 30px;
     padding-top: 1rem ;
-}
-nav ul{
-    display: flex;
-    gap: 2rem;
-    font-size: 20px;
-    list-style: none;
-    padding-top: 1.3rem ;
-}
-
-nav ul a:hover{
-    cursor: pointer;
-    color: rgb(26, 89, 172);
-}
-
-a{
     color: black;
     text-decoration: none;
-    font-size: 25px;
 }
+
+.logo:hover{
+    cursor: pointer;
+    transition: all 100ms ease-out;
+    color: rgb(0, 0, 0);
+}
+
+.nav-text{
+    color: black;
+}
+
+.nav-text:hover{
+    cursor: pointer;
+    transition: all 100ms ease-out;
+    color: rgb(0, 17, 255);
+}
+
+ul{
+    gap: 3rem;
+    font-size: 25px;
+    list-style: none;
+    padding-top: 0.7rem;
+}
+
+
 
 /*-----HOME-----*/
 main{
@@ -58,7 +69,6 @@ main{
     width: fit-content;
 }
 .carrousel{
-    padding-top: 1rem;
     width: 55%;
     margin: 0 auto;
 }
@@ -73,8 +83,8 @@ main{
 
 .card{
    text-align: center;
-   border: none;
 }
+
 
 .btn{
     border-radius: 10px;
@@ -100,14 +110,21 @@ main{
 
 
 .container-div-car{
-    padding-top: 5rem;
+    padding-top: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
 }
 
+.card-home{
+    border: none;
+}
 
+.card-catalogo:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0, 0, 0, 0.2);
+}
 
 .h1{
     font-size: 45px;
@@ -145,79 +162,26 @@ footer ul li h2{
     width: 50px;
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 570px){
+
+    
     /*Header*/
-    .header {
-        justify-content: center;
-        align-items: center;
+
+    .header{
         flex-direction: column;
-    }
-    .logo{
-        padding-top: 2rem;
-    }
-    nav ul{
-        gap: 9px;
-    }
-    /*Home*/
-   
-    .carrousel {
-        width: 100%;
-        position: relative;
-        left: 0%;
-        right: 0%;
-    }
-    .div-img{
-        display: inline-block;
-        margin: 1rem;
-        text-align: center;
-        font-size: 20px;
-    }
-    .porsche{
-        width: 250px;
-    }
-    
-    .bmw{
-        width: 320px;
-    }
-    
-    .mercedez{
-        width: 250px;
+        align-items: center;
     }
 
-    /*Catalogo*/
-    .text{
-        margin: 0%;
+        
+    ul{
+        gap: 10px;
+
     }
-    .h1{
-        padding-top: 2rem;
-        font-size: 30px;
-    }
-    
-    p{
-        font-size: 16px;
-    }
-    .div-container{
-        margin: 1rem;
-        font-size: 18px;
-    }
-    
-    .car{
-        width: 250px;
-    }
-    /*Footer*/
-    .footer{
-        height: 4rem;
-    }
-    footer ul{
-        padding-top: 1rem;
-        gap: 5px;
-    }
-    footer ul li h2{
-        color: #fff;
-        font-size: 20px;
-    }
-    .footer-logos{
-        width: 18px;
-    }
+
+    /*Home*/
+
+
+
+
 }
 
