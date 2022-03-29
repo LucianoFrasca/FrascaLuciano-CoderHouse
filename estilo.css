@@ -5,62 +5,33 @@
 }
 
 
-.container-home{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
 
 /*-----HEADER-----*/
-.header {
-    grid-area: header;
-    background-image: url("./img/Fondo\ Header.jpg");
-    opacity:    0.8;
-    width: 100%;
-    font-family: 'Oswald', sans-serif;
-    display: flex;
-    justify-content: space-around;
-    height: 4.5rem;
-    border-bottom: 1px outset black;
-}
 
-.logo{
-    font-size: 30px;
-    padding-top: 1rem ;
-    color: black;
-    text-decoration: none;
-}
-
-.logo:hover{
-    cursor: pointer;
-    transition: all 100ms ease-out;
-    color: rgb(0, 0, 0);
-}
-
-.nav-text{
-    color: black;
-}
-
-.nav-text:hover{
-    cursor: pointer;
-    transition: all 100ms ease-out;
-    color: rgb(0, 17, 255);
-}
-
-ul{
-    gap: 3rem;
+#botonera{
+    background-color: #000;
+    height: 100px;
+    font-family:'Oswald', sans-serif;
     font-size: 25px;
-    list-style: none;
-    padding-top: 0.7rem;
+    padding: 0px 4em;
+    box-shadow: 0 0 3px #000;
 }
 
+#logo{
+    color: #fffefe;
+    font-size: 25px;
+}
 
+.items{
+    color: white;
+}
 
 /*-----HOME-----*/
-main{
-    grid-area: main;
+
+
+
+.text-model{
+    padding: 3rem ;
 }
 
 .container{
@@ -85,6 +56,10 @@ main{
    text-align: center;
 }
 
+.card-home{
+    border: none;
+}
+
 
 .btn{
     border-radius: 10px;
@@ -92,18 +67,11 @@ main{
 
 /*-----CATALOGO-----*/
 
-.container-catalogo{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
 .text{
     display: block;
     text-align: center;
     padding: 2rem;
-    border: 3px outset #aaa7a7;
+    border: 2px outset #ffffff;
     background-color: #000000;
     color: white;
 }
@@ -115,10 +83,6 @@ main{
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-}
-
-.card-home{
-    border: none;
 }
 
 .card-catalogo:hover{
@@ -137,51 +101,95 @@ p{
     font-weight: bold;
 }
 
+
 /*-----FOOTER----*/
-.footer{
-    grid-area: footer;
-    background-color: rgb(29, 27, 27);
-    width: 100%;
-    font-family: 'Oswald', sans-serif;
+
+footer{
+    margin-top: 2rem;
+    background-color: #000;
+    height: 100px;
+    font-family: 'Oswald', sans-serif;;
 }
 
-footer ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
+.footer-text{
+    padding-top: 2rem;
 }
 
-footer ul li h2{
-    color: #fff;
-    font-size: 25px;
-}
 
-.footer-logos{
-    width: 50px;
-}
+/*Responsive*/
 
-@media only screen and (max-width: 570px){
-
+@media only screen and (max-width: 550px) {
     
-    /*Header*/
+  /*-------Header-------*/
+    #botonera{
+        height: 160px;
+        font-size: 15px;
+        padding: 0px 4em;
+    } 
+    #logo{
+        color: #fffefe;
+        font-size: 25px;
+    }
 
-    .header{
+    /*-------Home------*/
+    #carrouselnashe{
+        width: 100%;
+    }
+    /*--------Catalogo--------*/
+        
+    .container-div-car{
         flex-direction: column;
         align-items: center;
     }
 
-        
-    ul{
-        gap: 10px;
+    .h1{
+        font-size: 30px;
+    }    
 
+    p{
+        font-size: 15px;
+    }
+    
+}
+
+@media (min-width: 551px) and (max-width: 770px) {
+   
+    /*-------Header-------*/
+
+    #botonera{
+        height: 160px;
+        font-size: 15px;
+        padding: 0px 4em;
+    } 
+    #logo{
+        color: #fffefe;
+        font-size: 28px;
     }
 
-    /*Home*/
+    /*-------Home------*/
 
+    #carrouselnashe{
+        width: 100%;
+    }
 
+    #card-home{
+        width: 1220px;
+    }
+
+     /*--------Catalogo--------*/
+        
+     .container-div-car{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .h1{
+        font-size: 38px;
+    }    
+
+    p{
+        font-size: 20px;
+    }
 
 
 }
-
