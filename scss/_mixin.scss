@@ -1,0 +1,21 @@
+$celu:550px;
+$tablet:770px;
+$compu:2000px;
+
+@mixin headerresponsive ($media) {
+    @if $media == $celu {
+        @media (max-width: $celu) {
+           @content;
+    }
+    } @else if $media == $tablet {
+        @media (max-width: $tablet) {
+            @content;
+    }
+    }
+        @else if $media == $compu {
+        @media (max-width: $compu) {
+            @content;
+        }
+    }
+
+}

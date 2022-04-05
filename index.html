@@ -12,17 +12,17 @@
      <!--Link a Boostrap-->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Link a css-->
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./scss/estilo.css">
 
     <title>Automotores Luchiano´s</title>
 </head>
 
-<body class="container-home">
+<body>
 
     <!--Header-->
     <nav id="botonera" class="navbar navbar-expand-lg navbar-dark" >
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" id="logo">Luchiano´s</a>
+        <a class="navbar-brand" href="./index.html" id="logo">Luchiano´s</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,88 +47,88 @@
 
     <!--Carrousel-->
     <main class="main">
-            
-             <div class="carrousel" id="carrouselnashe">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./img/imagenesHome/Prueba1.jpg" class="d-block w-100" alt="Porsche 911">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./img/imagenesHome/Prueba2.jpg" class="d-block w-100" alt="Bmw M5">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./img/imagenesHome/Prueba3.jpg" class="d-block w-100" alt="Mercedes">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Siguiente</span>
-                    </button>
-                  </div>
-             </div>
-            
-             <!--Modelos Destacados-->
 
-            <div class="container">
-              <div class="row text-center">
-                <div>
-                  <h2 class="text-model">Modelos Destacados</h2>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam fugiat recusandae culpa, necessitatibus earum quod nemo nulla consequuntur aliquam, nam odit dicta laboriosam repellat nesciunt eveniet id placeat quaerat? Repudiandae.</p>
-                </div>
+              <div class="container-carrousel">
+                <div class="carrousel" id="carrouselnashe">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./img/imagenesHome/Prueba1.jpg" class="d-block img-fluid" width="1920" height="510" alt="Porsche 911">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/imagenesHome/Prueba2.jpg" class="d-block img-fluid" width="1920" height="510" alt="Bmw M5">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/imagenesHome/Prueba3.jpg" class="d-block img-fluid" width="1920" height="510" alt="Mercedes">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                      </button>
+                    </div>
+               </div>
 
               </div>
+            
+           <!--Modelos Destacados-->
+
+           <div class="container">
+            <div class="row text-center">
+              <div>
+                <h2 class="text-model">Modelos Destacados</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam fugiat recusandae culpa, necessitatibus earum quod nemo nulla consequuntur aliquam, nam odit dicta laboriosam repellat nesciunt eveniet id placeat quaerat? Repudiandae.</p>
+              </div>
+
             </div>
-              
-              <!--Cards-->
-               <div class="container">
+          </div>
+            
+            <!--Cards-->
+             <div class="container">
 
-                <div class="row">
-                  <div class="col-12 col-md-6 col-lg-4 pt-4 ">
-                    <div class="card card-home m-auto" style="width: 18rem;" id="card-home">
-                        <img src="./img/imagenesHome/Bmw-Home.png" class="card-img-top" alt="Bmw 5">
-                        <div class="card-body">
-                          <h5 class="card-title">Bmw Serie 2</h5>
-                          <a href="#" class="btn btn-secondary">Mas info.</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 pt-5 ">
-                  <div class="card card-home m-auto" style="width: 18rem;" id="card-home2">
-                      <img src="./img/imagenesHome/Mercedez-Home.png" class="card-img-top" alt="Mercedez">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 pt-4 ">
+                  <div class="card card-home m-auto" style="width: 18rem;" id="card-home">
+                      <img src="./img/imagenesHome/Bmw-Home.png" class="card-img-top" alt="Bmw 5">
                       <div class="card-body">
-                        <h5 class="card-title">Mercedez A350</h5>
+                        <h5 class="card-title">Bmw Serie 2</h5>
                         <a href="#" class="btn btn-secondary">Mas info.</a>
                       </div>
-                    </div>
+                  </div>
               </div>
-  
-              <div class="col-12 col-md-6 col-lg-4 pt-3 ">
-                <div class="card card-home m-auto" style="width: 18rem;" id="card-home3">
-                    <img src="./img/imagenesHome/Porsche-Home.png" class="card-img-top" alt="Porsche">
+
+              <div class="col-12 col-md-6 col-lg-4 pt-5 ">
+                <div class="card card-home m-auto" style="width: 18rem;" id="card-home2">
+                    <img src="./img/imagenesHome/Mercedez-Home.png" class="card-img-top" alt="Mercedez">
                     <div class="card-body">
-                      <h5 class="card-title">Porsche 911</h5>
+                      <h5 class="card-title">Mercedez A350</h5>
                       <a href="#" class="btn btn-secondary">Mas info.</a>
                     </div>
                   </div>
-  
             </div>
-  
+
+            <div class="col-12 col-md-6 col-lg-4 pt-3 ">
+              <div class="card card-home m-auto" style="width: 18rem;" id="card-home3">
+                  <img src="./img/imagenesHome/Porsche-Home.png" class="card-img-top" alt="Porsche">
+                  <div class="card-body">
+                    <h5 class="card-title">Porsche 911</h5>
+                    <a href="#" class="btn btn-secondary">Mas info.</a>
+                  </div>
                 </div>
-               </div>   
-              
-              
-              
+
+          </div>
+
+              </div>
+             </div>   
             
  
     </main>

@@ -1,0 +1,57 @@
+/*Responsive*/
+
+@media only screen and (max-width: 550px) {
+    
+  
+      /*-------Home------*/
+      #carrouselnashe{
+          width: 100%;
+      }
+      /*--------Catalogo--------*/
+          
+      .container-div-car{
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .h1{
+          font-size: 30px;
+      }    
+  
+      p{
+          font-size: 15px;
+      }
+      
+  }
+  
+  @media (min-width: 551px) and (max-width: 770px) {
+     
+  
+      /*-------Home------*/
+  
+      #carrouselnashe{
+          width: 100%;
+      }
+  
+      #card-home{
+          width: 1220px;
+      }
+  
+       /*--------Catalogo--------*/
+          
+       .container-div-car{
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .h1{
+          font-size: 38px;
+      }    
+  
+      p{
+          font-size: 20px;
+      }
+  
+  
+  }
+  

@@ -1,0 +1,201 @@
+@media (max-width: 550px) {
+  #header #botonera {
+    height: 160px;
+    font-size: 15px;
+    padding: 0px 4em;
+  }
+  #header #logo {
+    color: #fffefe;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 770px) {
+  #header {
+    /*-------Header-------*/
+  }
+  #header #botonera {
+    height: 160px;
+    font-size: 15px;
+    padding: 0px 4em;
+  }
+  #header #logo {
+    color: #fffefe;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 2000px) {
+  #header {
+    /*-----HEADER-----*/
+  }
+  #header #botonera {
+    background-color: #000;
+    height: 100px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    padding: 0px 4em;
+    -webkit-box-shadow: 0 0 3px #000;
+            box-shadow: 0 0 3px #000;
+  }
+  #header #logo {
+    color: #fffefe;
+    font-size: 25px;
+  }
+  #header .items {
+    color: white;
+  }
+}
+
+/*-----HOME-----*/
+.text-model {
+  padding: 3rem;
+}
+
+.container {
+  font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.carrousel {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.container-div {
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.card-home {
+  border: none;
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+/*-----CATALOGO-----*/
+.text {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  border: 2px outset #ffffff;
+  background-color: #000000;
+  color: white;
+}
+
+.container-div-car {
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.card-catalogo:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.h1 {
+  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 550px) {
+  /*-------Home------*/
+  #carrouselnashe {
+    width: 100%;
+  }
+  /*--------Catalogo--------*/
+  .container-div-car {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 770px) {
+  /*-------Home------*/
+  #carrouselnashe {
+    width: 100%;
+  }
+  #card-home {
+    width: 1220px;
+  }
+  /*--------Catalogo--------*/
+  .container-div-car {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .h1 {
+    font-size: 38px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+/*-----FOOTER----*/
+footer {
+  margin-top: 2rem;
+  background-color: #000;
+  height: 100px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.footer-text {
+  padding-top: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=estilo.css.map */
