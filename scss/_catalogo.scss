@@ -16,11 +16,12 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card-catalogo:hover{
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 16px black;
 }
 
 .h1{

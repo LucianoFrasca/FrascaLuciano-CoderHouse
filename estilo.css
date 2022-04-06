@@ -5,15 +5,14 @@
 }
 
 
-
 /*-----HEADER-----*/
 
 #botonera{
     background-color: #000;
     height: 100px;
-    font-family:'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    padding: 0px 4em;
+    padding: 0px 10em;
     box-shadow: 0 0 3px #000;
 }
 
@@ -28,60 +27,13 @@
 
 /*-----HOME-----*/
 
-figure{
-    margin: 0px auto;
-}
-
-#marcas{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.text-model{
-    padding: 3rem ;
-}
-
-.container-figura{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-figura figure{
-    width: 40%;
-    border-radius: 6px;
-    box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
-    cursor: pointer;
-}
-
-.gt{
-    width: 100%;
-    height: 100%;
-    transition: all 500ms ease-out;
-}
-
-.container-figura figure .capa{
-    position: absolute;
-    top: ;
-    width: 100%;
-    height: 100%;
-    background: #181717;
-    transition: all 500ms ease-out;
-    opacity: 1;
-    visibility: hidden;
-    text-align: center;
-}
-
-
-
 .container{
-    font-family: 'Oswald', sans-serif;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
 
+.f-f{
+    font-family:'Oswald', sans-serif;
+}
 .carrousel{
     width: 50%;
     margin: 0 auto;
@@ -97,6 +49,7 @@ figure{
 
 .card-home{
     border: none;
+    width: 18rem;
 }
 
 
@@ -122,6 +75,7 @@ figure{
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card-catalogo:hover{
@@ -140,23 +94,63 @@ p{
     font-weight: bold;
 }
 
+/*-----CONTACTO----*/
+
+.container-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3rem;
+    
+}
+
+#card-contact{
+    padding-top: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contact-map{
+    display: flex;
+    flex-direction: row;
+    border: 1px outset black;
+    width: 25%;
+}
 
 /*-----FOOTER----*/
 
+.pie-contacto{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 footer{
-    margin-top: 2rem;
     background-color: #000;
-    height: 100px;
-    font-family: 'Oswald', sans-serif;
-   
+    font-family: 'Roboto', sans-serif;
+}
+.iconos{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    margin: 5px;
+}
+#footer{
+    text-align: left;
 }
 
-.footer-text{
-    padding-top: 2rem;
+.link-coder{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#iconos-footer{
+    text-align: right;
 }
 
 
-/*Responsive*/
+/*-------------RESPONSIVE-----------------*/
 
 @media only screen and (max-width: 550px) {
     
@@ -172,11 +166,20 @@ footer{
     }
 
     /*-------Home------*/
-    #carrouselnashe{
+    .carrousel{
         width: 100%;
     }
+
+    .card-home{
+        width: 15rem;
+    }
+
     /*--------Catalogo--------*/
         
+    .card-catalogo{
+        margin-top: 2rem;
+    }
+    
     .container-div-car{
         flex-direction: column;
         align-items: center;
@@ -189,7 +192,48 @@ footer{
     p{
         font-size: 15px;
     }
+ 
+    /*-----Contacto------*/
     
+    .text-contact{
+        font-size: 40px;
+    }
+    
+    .container-contact{
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    
+    #card-contact{
+        margin: 0px auto;
+        padding-top: 2rem;
+        padding: 2rem;
+    }
+    
+    .contact-map{
+        height: 300px;
+        margin: 0px auto;
+        width: 75%;
+        margin-top: 2rem;
+        
+    }
+    
+    /* Footer */
+    .pie-contacto{
+        position: relative;
+        margin-top: 2rem;
+    }
+
+    #footer{
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        }
+        #iconos-footer{
+        text-align: center;
+        padding-left: 20px;
+        }
 }
 
 @media (min-width: 551px) and (max-width: 770px) {
@@ -208,19 +252,19 @@ footer{
 
     /*-------Home------*/
 
-    #carrouselnashe{
+    .carrousel{
         width: 100%;
     }
 
-    #card-home{
-        width: 1220px;
-    }
-
      /*--------Catalogo--------*/
-        
+
      .container-div-car{
         flex-direction: column;
         align-items: center;
+    }
+
+    .card-catalogo{
+        margin-top: 4rem;
     }
 
     .h1{
@@ -231,5 +275,187 @@ footer{
         font-size: 20px;
     }
 
+     /*-----Contacto------*/
+    
+     .text-contact{
+        font-size: 40px;
+    }
+    
+    .container-contact{
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    
+    #card-contact{
+        margin: 0px auto;
+        padding-top: 2rem;
+        padding: 5rem;
+        width: 80%;
+    }
+    
+    .contact-map{
+        height: 400px;
+        margin: 0px auto;
+        width: 80%;
+        margin-top: 3rem; 
+    }
 
+    /* Footer */
+    
+    .pie-contacto{
+        position: relative;
+        margin-top: 4rem;
+    }
+   
+    #footer{
+        text-align: center;
+    }
+    #iconos-footer{
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 771px) and (max-width: 1000px) {
+    /*-------Header-------*/
+
+    #botonera{
+        height: 175px;
+        font-size: 20px;
+        padding: 0px 4em;
+    } 
+    #logo{
+        color: #fffefe;
+        font-size: 28px;
+    }
+
+    /*-------Home------*/
+
+    .carrousel{
+        width: 100%;
+    }
+
+
+     /*--------Catalogo--------*/
+
+     .container-div-car{
+        align-items: center;
+    }
+
+    .card-catalogo{
+        margin-top: 2rem;
+    }
+
+    .h1{
+        font-size: 38px;
+    }    
+
+    p{
+        font-size: 20px;
+    }
+
+      /*-----Contacto------*/
+    
+      .text-contact{
+        font-size: 50px;
+    }
+    
+    .container-contact{
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    
+    #card-contact{
+        margin: 0px auto;
+        padding-top: 1rem;
+        padding: 5rem;
+        width: 80%;
+    }
+    
+    .contact-map{
+        height: 450px;
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 3rem;
+    }
+
+    /* Footer */
+   
+    .pie-contacto{
+        position: relative;
+        margin-top: 5rem;
+    }
+    
+    #footer{
+        text-align: center;
+    }
+    #iconos-footer{
+        text-align: center;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    /*-------Header-------*/
+
+    #botonera{
+        font-size: 25px;
+        padding: 0px 2em;
+    } 
+    #logo{
+        color: #fffefe;
+        font-size: 28px;
+    }
+
+    
+    /*-------Home------*/
+
+    .carrousel{
+        width: 100%;
+    }
+
+    .card-home{
+        width: 16rem;
+    }
+
+     /*-----Contacto------*/
+    
+     .text-contact{
+        font-size: 40px;
+    }
+    
+    .container-contact{
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    
+    #card-contact{
+        margin: 0px auto;
+        padding-top: 1rem;
+        padding: 5rem;
+        width: 80%;
+    }
+    
+    .contact-map{
+        height: 500px;
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 3rem;
+    }
+
+    /* Footer */
+   
+    .pie-contacto{
+        position: relative;
+        margin-top: 7rem;
+    }
+    
+    #footer{
+        text-align: center;
+    }
+    #iconos-footer{
+        text-align: center;
+    }
 }

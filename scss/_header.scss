@@ -1,14 +1,37 @@
-#header{
+
+
+.header{
+    
+    #botonera{
+        background-color: #000;
+        height: 100px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        padding: 0px 10em;
+    }
+    
+    #logo{
+        color: #fffefe;
+        font-size: 25px;
+    }
+    
+    .items{
+        color: white;
+    }
+
+
+
     @include headerresponsive($celu){
-        #botonera{
-            height: 160px;
-            font-size: 15px;
-            padding: 0px 4em;
-        } 
-        #logo{
-            color: #fffefe;
-            font-size: 25px;
-        }
+         /*-------Header-------*/
+    #botonera{
+        height: 160px;
+        font-size: 15px;
+        padding: 0px 4em;
+        font-family: 'Roboto', sans-serif;
+    } 
+    #logo{
+        color: #fffefe;
+        font-size: 25px;
     }
 
     @include headerresponsive($tablet){
@@ -18,6 +41,7 @@
         height: 160px;
         font-size: 15px;
         padding: 0px 4em;
+        font-family: 'Roboto', sans-serif;
     } 
     #logo{
         color: #fffefe;
@@ -25,28 +49,35 @@
     }         
     }
 
-    @include headerresponsive($compu){
-        
-    /*-----HEADER-----*/
+    @include headerresponsive($laptop){
+         /*-------Header-------*/
 
     #botonera{
-    background-color: #000;
-    height: 100px;
-    font-family:'Oswald', sans-serif;
-    font-size: 25px;
-    padding: 0px 4em;
-    box-shadow: 0 0 3px #000;
-    }
-
+        height: 175px;
+        font-size: 20px;
+        padding: 0px 4em;
+        font-family: 'Roboto', sans-serif;
+    } 
     #logo{
-    color: #fffefe;
-    font-size: 25px;
+        color: #fffefe;
+        font-size: 28px;
+    }
     }
 
-    .items{
-    color: white;
-    }
+    @include headerresponsive($compu){
+        
+     /*-------Header-------*/
 
+     #botonera{
+        font-size: 25px;
+        padding: 0px 2em;
+        font-family: 'Roboto', sans-serif;
+    } 
+    #logo{
+        color: #fffefe;
+        font-size: 28px;
+    }
     }
 }
 
+}

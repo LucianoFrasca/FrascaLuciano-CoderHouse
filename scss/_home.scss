@@ -1,18 +1,14 @@
 /*-----HOME-----*/
 
-
-
-.text-model{
-    padding: 3rem ;
+.container{
+    margin: 0 auto;   
 }
 
-.container{
-    font-family: 'Oswald', sans-serif;
-    margin: 0 auto;
-    width: fit-content;
+.f-f{
+    font-family:'Oswald', sans-serif;
 }
 .carrousel{
-    width: 55%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -26,6 +22,7 @@
 
 .card-home{
     border: none;
+    width: 18rem;
 }
 
 

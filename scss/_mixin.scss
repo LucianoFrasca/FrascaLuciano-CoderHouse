@@ -1,6 +1,7 @@
 $celu:550px;
 $tablet:770px;
-$compu:2000px;
+$laptop:1000px;
+$compu:1200px;
 
 @mixin headerresponsive ($media) {
     @if $media == $celu {
@@ -12,8 +13,12 @@ $compu:2000px;
             @content;
     }
     }
-        @else if $media == $compu {
-        @media (max-width: $compu) {
+        @else if $media == $laptop {
+        @media (max-width: $laptop) {
+            @content;
+        } 
+    } @else if $media == $compu{
+        @media  (max-width: $compu){
             @content;
         }
     }

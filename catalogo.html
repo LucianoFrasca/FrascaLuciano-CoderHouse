@@ -9,19 +9,21 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald&display=swap" rel="stylesheet">
     
     <!--Link a Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
     <!--Link a css-->
-     <link rel="stylesheet" href="./scss/estilo.css">
+     <link rel="stylesheet" href="./estilo.css">
     
     <title>Catalogo</title>
 </head>
 <body class="container-catalogo">
 
       <!--Header-->
+    <header class="header">
       <nav id="botonera" class="navbar navbar-expand-lg navbar-dark" >
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html" id="logo">Luchiano´s</a>
@@ -44,6 +46,9 @@
           </div>
         </div>
       </nav>
+    </header>
+    
+
   
 
     <!--Arranca el Main-->
@@ -51,14 +56,12 @@
 
             <div class="container text">
                 <h1 class="h1">Catalogo</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, quia exercitationem aut ex eligendi deserunt fuga. Porro quas tenetur a vero illum voluptatem beatae, nisi ea voluptate delectus minus libero?
-                Officiis a pariatur esse non alias. Voluptatibus corporis facilis enim voluptatem veniam, deserunt minus, eligendi itaque, labore alias sed porro quae? Ratione mollitia sint atque nulla molestias alias expedita pariatur!
-                Ab consequuntur porro eum doloribus maxime possimus recusandae culpa, expedita incidunt adipisci dolorem ea nesciunt necessitatibus neque repellat nulla excepturi qui amet itaque laborum sed quasi? Sint, aspernatur pariatur. Tenetur?</p>
+                <p>¡Disfruta de nuestros mejores productos! Aqui debajo tienes nuestro catalogo de productos, con todos los vehiculos que disponemos, si queres consultar sobre alguno, sobre tipos de financiamiento, etc. no dudes en contactarte, cualquiera de estas naves puede ser tuya!</p>
             </div>
       
          
         <div class="container-div-car">
-            <div class="card card-catalogo car-catalogo text-center" style="width: 25rem;">
+            <div class="card card-catalogo text-center" style="width: 25rem;">
                 <img src="./img/imagenesCatalogo/Bmw135-Catalogo.jpg" class="card-img-top" alt="BMW 135i">
                 <div class="card-body">
                   <h5 class="card-title">Bmw 135i</h5>
@@ -67,7 +70,7 @@
                 </div>
               </div>
 
-              <div class="card card-catalogo car-catalogo text-center" style="width: 25rem;">
+              <div class="card card-catalogo text-center" style="width: 25rem;">
                 <img src="./img/imagenesCatalogo/Bmwm4-Catalogo.jpg" class="card-img-top" alt="Bmw M4 Cabrio">
                 <div class="card-body">
                   <h5 class="card-title">Bmw M4 Cabrio</h5>
@@ -78,7 +81,7 @@
 
         </div>
               <div class="container-div-car">
-                <div class="card card-catalogo car-catalogo text-center" style="width: 25rem;">
+                <div class="card card-catalogo text-center" style="width: 25rem;">
                     <img src="./img/imagenesCatalogo/Mercedez-Catalogo.jpg" class="card-img-top" alt="Mercedez A35">
                     <div class="card-body">
                       <h5 class="card-title">Mercedez A35</h5>
@@ -87,7 +90,7 @@
                     </div>
                   </div>
     
-                  <div class="card card-catalogo car-catalogo text-center" style="width: 25rem;">
+                  <div class="card card-catalogo text-center" style="width: 25rem;">
                     <img src="./img/imagenesCatalogo/Porsche-Catalogo.jpg" class="card-img-top" alt="Porsche 997">
                     <div class="card-body">
                       <h5 class="card-title">Porsche 997</h5>
@@ -101,10 +104,25 @@
     </main>
 
     
-   <!--Footer-->
+    <!--Footer-->
        
-   <footer class="text-center text-white">
-    <h2 class="footer-text">Todos los derechos reservados</h2>
+    <footer class="container-fluid text-white">
+      <div class="container mt-5 pt-2">
+          <div class="row">
+              <div class="col-lg-4 col-md-12 col-sm-12" id="footer">
+                  <a href="https://www.coderhouse.com/" target="_blank" class="link-coder">CoderHouse</a>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                  <p class="text-center">&copy;Luchiano´s - &copy;Todos los derechos reservados</p>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12" id="iconos-footer">
+                  <a target="_blank" href="https://www.instagram.com/coderhouse/"><img src="img/Instagram.png" alt="Instagram" width="125" height="125" class="iconos"></a>
+                  <a target="_blank" href="https://twitter.com/coderhouse"><img src="img/Twitter.png" alt="Twitter" width="125" height="125" class="iconos"></a>
+                  <a target="_blank" href="https://www.facebook.com/Coderhouse"><img src="img/Facebook.png" alt="Facebook" width="125" height="125" class="iconos"></a>
+                  <a target="_blank" href="https://www.WhatsApp.com"><img src="img/Whatsapp.png" alt="WhatsApp" width="125" height="125" class="iconos"></a>
+              </div>
+          </div>
+      </div> 
   </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
